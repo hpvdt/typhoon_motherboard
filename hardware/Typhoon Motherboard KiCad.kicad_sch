@@ -4566,13 +4566,13 @@
 		(uuid "b19d4ade-903c-4541-93b8-785bdaf76bd1")
 	)
 	(junction
-		(at 194.31 45.72)
+		(at 194.31 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4d87200-52c5-4cb1-a887-dc57986efb2f")
 	)
 	(junction
-		(at 194.31 55.88)
+		(at 194.31 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbe243f3-9ad8-4bd3-b4db-8460ed0b2337")
@@ -4727,7 +4727,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 60.96) (xy 189.23 55.88)
+			(xy 189.23 48.26) (xy 189.23 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4777,7 +4777,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 60.96) (xy 199.39 55.88)
+			(xy 199.39 48.26) (xy 199.39 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5087,7 +5087,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 55.88) (xy 194.31 54.61)
+			(xy 194.31 43.18) (xy 194.31 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5347,7 +5347,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 55.88) (xy 194.31 55.88)
+			(xy 199.39 43.18) (xy 194.31 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5457,7 +5457,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 45.72) (xy 194.31 45.72)
+			(xy 189.23 33.02) (xy 194.31 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5507,7 +5507,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 40.64) (xy 199.39 45.72)
+			(xy 199.39 27.94) (xy 199.39 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5517,7 +5517,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 40.64) (xy 189.23 45.72)
+			(xy 189.23 27.94) (xy 189.23 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5567,7 +5567,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 45.72) (xy 194.31 46.99)
+			(xy 194.31 33.02) (xy 194.31 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5627,7 +5627,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 45.72) (xy 194.31 45.72)
+			(xy 199.39 33.02) (xy 194.31 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5707,7 +5707,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 55.88) (xy 194.31 55.88)
+			(xy 189.23 43.18) (xy 194.31 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5976,8 +5976,8 @@
 		(uuid 713076a6-259a-427e-a751-5cf4967771eb)
 	)
 	(rectangle
-		(start 182.88 30.48)
-		(end 212.09 76.2)
+		(start 182.88 17.78)
+		(end 212.09 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -6011,9 +6011,20 @@
 		)
 		(uuid ef1200ad-10ca-4946-9d0c-ad8766e286dd)
 	)
+	(text "still to do:\n\n- add uart conenction\nfor telemetry\n\n- add power out connections\nfor peripheral boards when\nin wired power operation mode"
+		(exclude_from_sim no)
+		(at 183.134 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "180a8d95-f53f-4b96-9c92-9131d6431b78")
+	)
 	(text "Battery Connection\n(3.7V-5V, XT30)"
 		(exclude_from_sim no)
-		(at 184.15 72.898 0)
+		(at 184.15 60.198 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6705,7 +6716,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 189.23 40.64 0)
+		(at 189.23 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6713,7 +6724,7 @@
 		(dnp no)
 		(uuid "1338cf26-6d67-48b7-9cdf-24c4f735b106")
 		(property "Reference" "#PWR015"
-			(at 189.23 44.45 0)
+			(at 189.23 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6722,7 +6733,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 189.23 35.56 0)
+			(at 189.23 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +6741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 40.64 0)
+			(at 189.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6739,7 +6750,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 40.64 0)
+			(at 189.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6748,7 +6759,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 189.23 40.64 0)
+			(at 189.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7536,7 +7547,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 60.96 0)
+		(at 199.39 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7545,7 +7556,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fb65e0b-03c2-435b-9ade-7f4a21dea2f4")
 		(property "Reference" "#PWR027"
-			(at 199.39 67.31 0)
+			(at 199.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7554,7 +7565,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 199.39 66.04 0)
+			(at 199.39 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7562,7 +7573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 60.96 0)
+			(at 199.39 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7571,7 +7582,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 60.96 0)
+			(at 199.39 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +7591,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 60.96 0)
+			(at 199.39 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9072,7 +9083,7 @@
 	)
 	(symbol
 		(lib_id "power:-BATT")
-		(at 189.23 60.96 180)
+		(at 189.23 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9081,7 +9092,7 @@
 		(fields_autoplaced yes)
 		(uuid "83a89550-81e8-40f3-8424-88ce0eea7dd3")
 		(property "Reference" "#PWR025"
-			(at 189.23 57.15 0)
+			(at 189.23 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9090,7 +9101,7 @@
 			)
 		)
 		(property "Value" "-BATT"
-			(at 189.23 66.04 0)
+			(at 189.23 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9098,7 +9109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 60.96 0)
+			(at 189.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9107,7 +9118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 60.96 0)
+			(at 189.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9116,7 +9127,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-BATT\""
-			(at 189.23 60.96 0)
+			(at 189.23 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10325,7 +10336,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 199.39 40.64 0)
+		(at 199.39 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10334,7 +10345,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa4c3030-7d75-4e7d-b5e6-f9edc71ab39a")
 		(property "Reference" "#PWR042"
-			(at 199.39 44.45 0)
+			(at 199.39 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10343,7 +10354,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 199.39 35.56 0)
+			(at 199.39 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10351,7 +10362,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 40.64 0)
+			(at 199.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10360,7 +10371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 40.64 0)
+			(at 199.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10369,7 +10380,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 199.39 40.64 0)
+			(at 199.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11783,7 +11794,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 194.31 52.07 0)
+		(at 194.31 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11792,7 +11803,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb4fa3e0-74ec-4112-ae7a-c612acfa2f68")
 		(property "Reference" "BT1"
-			(at 198.12 48.9584 0)
+			(at 198.12 36.2584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11801,7 +11812,7 @@
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 198.12 51.4984 0)
+			(at 198.12 38.7984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11810,7 +11821,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
-			(at 194.31 50.546 90)
+			(at 194.31 37.846 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11819,7 +11830,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 50.546 90)
+			(at 194.31 37.846 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11828,7 +11839,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 194.31 52.07 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
