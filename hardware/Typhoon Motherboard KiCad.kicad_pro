@@ -395,6 +395,10 @@
     [
       "13012fcd-02e9-4b82-8301-52da00f60a6e",
       "Root"
+    ],
+    [
+      "a2901dca-7ab5-4cb2-a115-4454e9e4743e",
+      "CentralPowerSource"
     ]
   ],
   "text_variables": {}
