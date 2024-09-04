@@ -245,7 +245,7 @@
 				)
 			)
 		)
-		(symbol "+3.3V_3"
+		(symbol "+3.3V_4"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -306,7 +306,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_3_0_1"
+			(symbol "+3.3V_4_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -344,7 +344,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_3_1_1"
+			(symbol "+3.3V_4_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3618,9 +3618,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3716,126 +3716,6 @@
 				)
 			)
 			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:+3V3"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4452,22 +4332,28 @@
 		(uuid "4399cbbf-205f-405a-a92d-302ce1637038")
 	)
 	(junction
-		(at 271.78 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5be3c6b1-42a9-463e-945c-7b91785cce29")
-	)
-	(junction
 		(at 30.48 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5db3429c-62ea-4c75-9114-52bd7158cc15")
 	)
 	(junction
+		(at 271.78 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8649a3a9-7b2b-4c90-8d3b-0b111f1f38c8")
+	)
+	(junction
 		(at 138.43 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87d92b14-0d6c-4893-9d31-ab507eedd1ba")
+	)
+	(junction
+		(at 115.57 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d8a010e-0f4e-4792-b9fc-24f5cc0194d8")
 	)
 	(junction
 		(at 157.48 31.75)
@@ -4500,12 +4386,6 @@
 		(uuid "afed5629-2676-4c9a-9d08-edd50d43e31b")
 	)
 	(junction
-		(at 111.76 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4cc7884-208f-4d1f-a8fa-968f8710d7da")
-	)
-	(junction
 		(at 213.36 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4536,22 +4416,14 @@
 		(uuid "ecabd2fc-4064-448b-a99e-860a6cbdc964")
 	)
 	(junction
-		(at 265.43 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f914bd35-99f3-44b2-832d-a959b1c858be")
-	)
-	(junction
 		(at 209.55 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "faaff5fb-38aa-4c05-9023-c439558d0dcd")
 	)
-	(junction
-		(at 107.95 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffdc8cdb-6433-4871-a97d-b2bcaed5367a")
+	(no_connect
+		(at 69.85 139.7)
+		(uuid "09f332d1-4b45-4ee2-b91d-d76b8ac4b0bf")
 	)
 	(no_connect
 		(at 39.37 172.72)
@@ -4610,16 +4482,16 @@
 		(uuid "9c35422e-f6ff-4a60-adae-e47b2025e8cf")
 	)
 	(no_connect
-		(at 69.85 172.72)
-		(uuid "9e499254-0356-4fb0-ba46-78159b90fd9e")
-	)
-	(no_connect
 		(at 69.85 154.94)
 		(uuid "a0147363-9a2b-4af7-88e1-d3317b091200")
 	)
 	(no_connect
 		(at 39.37 170.18)
 		(uuid "a59ba731-6f5a-42ab-a1e1-c79f3aa41638")
+	)
+	(no_connect
+		(at 69.85 142.24)
+		(uuid "a698ca8f-6a8c-432f-bb01-450beea9fc92")
 	)
 	(no_connect
 		(at 39.37 152.4)
@@ -4650,16 +4522,12 @@
 		(uuid "d75fc2cb-28e6-4cb4-ac05-f8489cb98ac3")
 	)
 	(no_connect
-		(at 69.85 170.18)
-		(uuid "f9bb07fb-749b-4d19-ad53-4dcea9595b8e")
-	)
-	(no_connect
 		(at 39.37 149.86)
 		(uuid "f9e81175-d999-4b9a-a5b4-36c3b1b18210")
 	)
 	(wire
 		(pts
-			(xy 142.24 41.91) (xy 138.43 41.91)
+			(xy 144.78 41.91) (xy 138.43 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4669,7 +4537,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 31.75) (xy 142.24 41.91)
+			(xy 144.78 31.75) (xy 144.78 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4696,6 +4564,16 @@
 			(type default)
 		)
 		(uuid "10aeb3db-30eb-43be-a648-9514cc867338")
+	)
+	(wire
+		(pts
+			(xy 104.14 41.91) (xy 118.11 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13310e04-1c87-4556-bcbf-9b46f3f97719")
 	)
 	(wire
 		(pts
@@ -4749,7 +4627,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 46.99) (xy 118.11 46.99)
+			(xy 115.57 46.99) (xy 118.11 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4799,13 +4677,33 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 57.15) (xy 107.95 60.96)
+			(xy 271.78 118.11) (xy 271.78 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ad11144-d403-4ae4-861d-40b093491824")
+		(uuid "2a935d58-a3bf-4cf0-baaf-8f190181118e")
+	)
+	(wire
+		(pts
+			(xy 271.78 107.95) (xy 271.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b220bc4-2cb1-4fb7-b9fd-84fbbe238725")
+	)
+	(wire
+		(pts
+			(xy 115.57 46.99) (xy 115.57 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fd48844-1b76-4f85-95aa-b193087a3a6b")
 	)
 	(wire
 		(pts
@@ -4879,23 +4777,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 31.75) (xy 157.48 31.75)
+			(xy 144.78 31.75) (xy 157.48 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4fd3e461-72fc-4145-a982-039500eb6488")
-	)
-	(wire
-		(pts
-			(xy 107.95 46.99) (xy 99.06 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5231ce0e-7a74-4e1d-8b3f-7721801bc0f9")
 	)
 	(wire
 		(pts
@@ -4929,16 +4817,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 60.96) (xy 115.57 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54b2087c-9bae-428e-89ec-c538fae7a90a")
-	)
-	(wire
-		(pts
 			(xy 60.96 107.95) (xy 71.12 107.95)
 		)
 		(stroke
@@ -4956,16 +4834,6 @@
 			(type default)
 		)
 		(uuid "5cd8d54d-2546-4a8e-a91f-8380472ca7b2")
-	)
-	(wire
-		(pts
-			(xy 271.78 93.98) (xy 278.13 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d255239-5e12-4b82-b33d-dfd1f4645ae1")
 	)
 	(wire
 		(pts
@@ -5039,7 +4907,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 31.75) (xy 166.37 31.75)
+			(xy 157.48 31.75) (xy 168.91 31.75)
 		)
 		(stroke
 			(width 0)
@@ -5086,6 +4954,16 @@
 			(type default)
 		)
 		(uuid "705c7e0e-d2fc-4e40-bc52-38b4458b7117")
+	)
+	(wire
+		(pts
+			(xy 104.14 39.37) (xy 118.11 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74849f48-acb3-4772-a2d7-27ac4dc94915")
 	)
 	(wire
 		(pts
@@ -5156,16 +5034,6 @@
 			(type default)
 		)
 		(uuid "806453c6-d75d-48ca-9e7d-8ee2a028d1c2")
-	)
-	(wire
-		(pts
-			(xy 271.78 107.95) (xy 271.78 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8154b6be-81e7-4db4-81d4-410823188851")
 	)
 	(wire
 		(pts
@@ -5289,7 +5157,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 54.61) (xy 166.37 54.61)
+			(xy 157.48 54.61) (xy 168.91 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5299,23 +5167,13 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 107.95) (xy 247.65 107.95)
+			(xy 240.03 107.95) (xy 247.65 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9f4e0ff6-4b82-475e-bfd4-d916e90ada16")
-	)
-	(wire
-		(pts
-			(xy 99.06 41.91) (xy 99.06 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a00a83a7-a3e2-44d9-9f9e-b6335b93552b")
 	)
 	(wire
 		(pts
@@ -5329,7 +5187,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 116.84) (xy 247.65 116.84)
+			(xy 240.03 116.84) (xy 247.65 116.84)
 		)
 		(stroke
 			(width 0)
@@ -5339,33 +5197,13 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 90.17) (xy 271.78 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3683ca5-c1df-41e6-a4d7-6bf51495b3cc")
-	)
-	(wire
-		(pts
-			(xy 242.57 99.06) (xy 247.65 99.06)
+			(xy 240.03 99.06) (xy 247.65 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "aedd7656-2964-4730-8d3e-6b1fefd2c90b")
-	)
-	(wire
-		(pts
-			(xy 107.95 60.96) (xy 111.76 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5f1a94b-ef88-45a5-871a-342fd5a2f901")
 	)
 	(wire
 		(pts
@@ -5379,7 +5217,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 139.7) (xy 39.37 139.7)
+			(xy 24.13 139.7) (xy 39.37 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5409,7 +5247,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 132.08) (xy 39.37 132.08)
+			(xy 24.13 132.08) (xy 39.37 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5426,16 +5264,6 @@
 			(type default)
 		)
 		(uuid "c3f31a96-e79e-488f-a86d-3c03cd821438")
-	)
-	(wire
-		(pts
-			(xy 271.78 99.06) (xy 271.78 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4a41214-c807-45cc-9f5d-79f4d50cf3bb")
 	)
 	(wire
 		(pts
@@ -5479,13 +5307,33 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 90.17) (xy 247.65 90.17)
+			(xy 271.78 116.84) (xy 271.78 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc1581ef-709b-4ffc-8fcd-c8a929b01141")
+	)
+	(wire
+		(pts
+			(xy 240.03 90.17) (xy 247.65 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cc6e102b-36eb-43f1-bf8d-185deaf1eb53")
+	)
+	(wire
+		(pts
+			(xy 271.78 90.17) (xy 271.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdfbf43b-62d5-4559-9e87-a7e92502eb27")
 	)
 	(wire
 		(pts
@@ -5539,7 +5387,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 44.45) (xy 115.57 60.96)
+			(xy 115.57 44.45) (xy 115.57 46.99)
 		)
 		(stroke
 			(width 0)
@@ -5589,7 +5437,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 81.28) (xy 247.65 81.28)
+			(xy 240.03 81.28) (xy 247.65 81.28)
 		)
 		(stroke
 			(width 0)
@@ -5619,23 +5467,13 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 72.39) (xy 247.65 72.39)
+			(xy 240.03 72.39) (xy 247.65 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ed93d6cd-bd75-45e3-9120-d61957f7b585")
-	)
-	(wire
-		(pts
-			(xy 107.95 46.99) (xy 107.95 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee5235a9-3cf0-499b-969e-46e9989cca98")
 	)
 	(wire
 		(pts
@@ -5649,16 +5487,6 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 93.98) (xy 271.78 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f13b11f2-c35d-40ab-90dc-39e95347b396")
-	)
-	(wire
-		(pts
 			(xy 151.13 62.23) (xy 151.13 50.8)
 		)
 		(stroke
@@ -5669,7 +5497,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 134.62) (xy 39.37 134.62)
+			(xy 24.13 134.62) (xy 39.37 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5679,7 +5507,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 137.16) (xy 39.37 137.16)
+			(xy 24.13 137.16) (xy 39.37 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5837,21 +5665,6 @@
 		)
 		(uuid ef1200ad-10ca-4946-9d0c-ad8766e286dd)
 	)
-	(text "Jaden please check over this I am very sure I did this wrong"
-		(exclude_from_sim no)
-		(at 113.284 71.12 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left)
-		)
-		(uuid "09c2d3a1-a062-4b1e-abf9-15bfc2dc25fb")
-	)
 	(text "Header for connection \nto telemetry; UART cross over\nhappening here\n\n\n"
 		(exclude_from_sim no)
 		(at 157.734 175.514 0)
@@ -5907,7 +5720,7 @@
 	)
 	(text "Safety Regulation:\nSo if the V_{Batt} is different from V_{TypeC}\nnothing will fry anything\n"
 		(exclude_from_sim no)
-		(at 191.516 149.098 0)
+		(at 190.754 150.368 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5982,18 +5795,18 @@
 		(uuid "d0650c76-d7c4-4bfb-b4ed-60ef8bc3a627")
 	)
 	(label "CAN_{L}"
-		(at 166.37 54.61 0)
+		(at 168.91 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "18c96b35-b1db-4632-b8bc-1137323123e3")
 	)
 	(label "LED_{4}"
-		(at 69.85 147.32 0)
+		(at 69.85 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6004,24 +5817,24 @@
 		(uuid "1afeedcb-b033-4aa2-aec3-96fbae291990")
 	)
 	(label "LED_{1}"
-		(at 242.57 72.39 180)
+		(at 240.03 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "1f3b2607-28ac-45de-a768-0130aec6a2e9")
 	)
 	(label "Prog{slash}TypeC_{RX}"
-		(at 118.11 41.91 180)
+		(at 104.14 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "245b4519-8d5e-459f-bec2-cd454956bfd8")
 	)
@@ -6048,7 +5861,7 @@
 		(uuid "3a5552c6-8762-4324-90da-68f8646df93e")
 	)
 	(label "LED_{6}"
-		(at 69.85 152.4 0)
+		(at 69.85 172.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6070,13 +5883,13 @@
 		(uuid "5e966f2d-cf1b-4c97-b642-58df3927863f")
 	)
 	(label "LED_{3}"
-		(at 242.57 90.17 180)
+		(at 240.03 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6359ec06-25cb-4fae-9748-0dcdedede2de")
 	)
@@ -6103,13 +5916,13 @@
 		(uuid "6a6fc5eb-78ec-44cc-9694-5ce5702f35fc")
 	)
 	(label "LED_{4}"
-		(at 242.57 99.06 180)
+		(at 240.03 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "77364d82-5d43-4ad9-86eb-d37ce5d33150")
 	)
@@ -6125,13 +5938,13 @@
 		(uuid "78ce7bc2-3581-48df-895b-5bf7e130bc26")
 	)
 	(label "LED_{6}"
-		(at 242.57 116.84 180)
+		(at 240.03 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "8e8108d5-6dcd-491e-89a0-86201ed5b8d6")
 	)
@@ -6147,7 +5960,7 @@
 		(uuid "a34cada3-c393-4556-bb13-2fde484f7ced")
 	)
 	(label "Mother_{TX}"
-		(at 30.48 132.08 0)
+		(at 24.13 132.08 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6169,7 +5982,7 @@
 		(uuid "aa310843-91c1-4969-a73a-ba38dc7a5514")
 	)
 	(label "D-"
-		(at 35.56 137.16 0)
+		(at 24.13 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6202,7 +6015,7 @@
 		(uuid "b75c93b0-787a-4045-a1a5-781e2fd91921")
 	)
 	(label "LED_{5}"
-		(at 69.85 149.86 0)
+		(at 69.85 170.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6213,7 +6026,7 @@
 		(uuid "b87f55d4-6c7b-41d1-ae23-c3907c3e003d")
 	)
 	(label "Mother_{RX}"
-		(at 30.48 134.62 0)
+		(at 24.13 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6224,18 +6037,18 @@
 		(uuid "c1c8f6e9-3ba1-4516-9991-22057ddb3f92")
 	)
 	(label "CAN_{H}"
-		(at 166.37 31.75 0)
+		(at 168.91 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c743637e-7a01-4dee-b08a-0a801aa5863f")
 	)
 	(label "LED_{3}"
-		(at 69.85 144.78 0)
+		(at 69.85 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6256,25 +6069,14 @@
 		)
 		(uuid "cda43f54-00a0-44b4-8d65-a3d78fd3f9ea")
 	)
-	(label "LED_{1}"
-		(at 69.85 139.7 0)
+	(label "LED_{2}"
+		(at 240.03 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
-		)
-		(uuid "d21eb1e8-053b-4ed1-b345-2da14ef8ab58")
-	)
-	(label "LED_{2}"
-		(at 242.57 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
 		)
 		(uuid "d3d69fa9-1051-48b0-b168-8f618457edda")
 	)
@@ -6323,7 +6125,7 @@
 		(uuid "e5fa7e46-13dc-4dd6-8941-241f2cb17046")
 	)
 	(label "LED_{2}"
-		(at 69.85 142.24 0)
+		(at 69.85 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6334,18 +6136,18 @@
 		(uuid "e8aee83d-ca79-4645-8efe-518b53b91554")
 	)
 	(label "LED_{5}"
-		(at 242.57 107.95 180)
+		(at 240.03 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ebb69269-9833-47e1-83e3-79d114b1e388")
 	)
 	(label "D+"
-		(at 35.56 139.7 0)
+		(at 24.13 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6366,14 +6168,25 @@
 		)
 		(uuid "f03f0d98-6ffd-4e54-93ad-22d4696ace14")
 	)
-	(label "Prog{slash}TypeC_{TX}"
-		(at 118.11 39.37 180)
+	(label "LED_{1}"
+		(at 69.85 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
+		)
+		(uuid "f3c2fc33-f377-4081-9bb2-1f071053d200")
+	)
+	(label "Prog{slash}TypeC_{TX}"
+		(at 104.14 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
 		(uuid "fe68e2b1-b891-4f1d-ab01-c05ac47f320e")
 	)
@@ -6440,6 +6253,72 @@
 			(project "Typhoon Motherboard KiCad"
 				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 54.61 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07a9420d-8e19-4198-aadc-c4af8c7ab16b")
+		(property "Reference" "#PWR06"
+			(at 54.61 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 54.61 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 54.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b97162e9-afc0-41c9-bb79-729c261d99a5")
+		)
+		(instances
+			(project "Typhoon Motherboard KiCad"
+				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7026,139 +6905,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 49.53 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e99472b-0246-4df1-a2a2-d10357420faa")
-		(property "Reference" "#PWR018"
-			(at 49.53 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 49.53 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 49.53 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ced30fe-b117-48bb-9a0f-8438c4d7cd74")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 265.43 27.94 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f0daa07-2e58-43d6-b45e-4a2a2da29974")
-		(property "Reference" "#FLG03"
-			(at 267.335 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 269.24 27.9399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 265.43 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b79f059a-2b00-43c5-bb4a-a948d7739e76")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 209.55 48.26 0)
 		(unit 1)
@@ -7382,7 +7128,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 219.71 137.16 0)
 			(effects
 				(font
@@ -7570,6 +7316,72 @@
 			(project "Typhoon Motherboard KiCad"
 				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 45.72 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40ca347e-110d-4b18-900b-9dd53e7caf85")
+		(property "Reference" "#PWR010"
+			(at 45.72 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 45.72 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 45.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4898b7cb-6ff7-4b79-85d0-1a3aa2989bfb")
+		)
+		(instances
+			(project "Typhoon Motherboard KiCad"
+				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8165,73 +7977,6 @@
 		)
 	)
 	(symbol
-		(lib_name "+3.3V_3")
-		(lib_id "power:+3.3V")
-		(at 99.06 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51d426e1-9e0a-4f95-8c1c-b1da12187f00")
-		(property "Reference" "#PWR014"
-			(at 99.06 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 99.06 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 99.06 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03921f72-1a03-4f14-b3ba-69e1b66a6c4e")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:MCP1825S")
 		(at 38.1 59.69 0)
 		(unit 1)
@@ -8297,72 +8042,6 @@
 			(project "Typhoon Motherboard KiCad"
 				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
 					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 45.72 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56a1b4ea-d10e-407a-8125-3b3450a5bf70")
-		(property "Reference" "#PWR010"
-			(at 45.72 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 45.72 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "063bf0a2-a0af-4a06-b069-a7145311dedc")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9045,78 +8724,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 107.95 53.34 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "84a6cf8b-91a4-4dcb-8337-5421e4b5d87d")
-		(property "Reference" "C7"
-			(at 104.14 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15uF"
-			(at 104.14 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.9848 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 107.95 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7133c6ac-cde3-47d2-a9cb-725cd280834e")
-		)
-		(pin "1"
-			(uuid "b741bca2-25a0-4e37-bb6b-f2cb24a2c9ec")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 278.13 93.98 0)
+		(at 271.78 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9125,7 +8734,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a5365c5-5894-4268-8890-47e14d834363")
 		(property "Reference" "#PWR016"
-			(at 278.13 100.33 0)
+			(at 271.78 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9134,7 +8743,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 278.13 99.06 0)
+			(at 271.78 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9142,7 +8751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 278.13 93.98 0)
+			(at 271.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9151,7 +8760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 278.13 93.98 0)
+			(at 271.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9160,7 +8769,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 278.13 93.98 0)
+			(at 271.78 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9462,6 +9071,73 @@
 			(project "Typhoon Motherboard KiCad"
 				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3.3V_4")
+		(lib_id "power:+3.3V")
+		(at 49.53 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9aaf2f88-9808-4d0c-8bfc-41c9453f53d7")
+		(property "Reference" "#PWR018"
+			(at 49.53 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 49.53 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 49.53 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bee01d4e-6914-4973-b0b3-3bf9625c8696")
+		)
+		(instances
+			(project "Typhoon Motherboard KiCad"
+				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10601,7 +10277,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 207.01 137.16 0)
 			(effects
 				(font
@@ -10663,7 +10339,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 60.96 0)
+		(at 115.57 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10672,7 +10348,7 @@
 		(fields_autoplaced yes)
 		(uuid "e20caff9-3b75-42be-bc4c-f0a2d783317d")
 		(property "Reference" "#PWR038"
-			(at 111.76 67.31 0)
+			(at 115.57 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10681,7 +10357,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 66.04 0)
+			(at 115.57 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10689,7 +10365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 60.96 0)
+			(at 115.57 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10698,7 +10374,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 60.96 0)
+			(at 115.57 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10707,7 +10383,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 60.96 0)
+			(at 115.57 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11062,72 +10738,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 54.61 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4fe2fb2-a0ff-4a85-88b0-39d51db552b6")
-		(property "Reference" "#PWR06"
-			(at 54.61 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 54.61 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "671cd2d8-6087-417c-a653-9fcf1c593678")
-		)
-		(instances
-			(project "Typhoon Motherboard KiCad"
-				(path "/13012fcd-02e9-4b82-8301-52da00f60a6e"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Battery_Cell")
 		(at 209.55 39.37 0)
 		(unit 1)
@@ -11146,7 +10756,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Battery_Cell"
+		(property "Value" "XT30"
 			(at 213.36 38.7984 0)
 			(effects
 				(font

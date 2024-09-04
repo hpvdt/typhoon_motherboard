@@ -3680,7 +3680,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a7459847-51d8-4471-9f57-214e4d55e920")
 		(property "Reference" "D5"
 			(at 194.31 70.8024 90)
