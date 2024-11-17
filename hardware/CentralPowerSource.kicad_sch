@@ -1390,12 +1390,6 @@
 		(uuid "3266fd5d-fccb-4ea6-ab52-3590daa680d7")
 	)
 	(junction
-		(at 128.27 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b1b8a0e-e962-406d-b91c-a69a05cd39b5")
-	)
-	(junction
 		(at 214.63 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1454,12 +1448,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d47649f-2d8e-4ce2-b67f-57726bf0c139")
-	)
-	(junction
-		(at 128.27 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0cdc6f8-b9bf-494d-9e73-efe1e46c0824")
 	)
 	(junction
 		(at 96.52 76.2)
@@ -2624,7 +2612,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 128.27 81.28 0)
+		(at 128.27 81.28 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2633,25 +2621,23 @@
 		(fields_autoplaced yes)
 		(uuid "4d04b22d-19c5-46a8-8edc-e5ba67fd5095")
 		(property "Reference" "C7"
-			(at 132.08 80.0099 0)
+			(at 128.27 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "20uF"
-			(at 132.08 82.5499 0)
+			(at 128.27 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 129.2352 85.09 0)
+			(at 132.08 80.3148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
