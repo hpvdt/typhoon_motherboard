@@ -1,13 +1,29 @@
 #include <Arduino.h>
 
-#define STATUS_LED_PIN 5 
 void setup() {
-  pinMode(STATUS_LED_PIN, OUTPUT);
+  Serial.begin(115200);
+  delay(1000);
+  Serial.println("ESP32-S3 LED Test Starting...");
+
+  // Test multiple pins
+  pinMode(7, OUTPUT);  // Built-in LED (if available)
+  pinMode(5, OUTPUT);  // Your original pin
+  pinMode(6, OUTPUT);  // Additional test pin
+
+  Serial.println("Setup complete");
 }
 
 void loop() {
-  digitalWrite(STATUS_LED_PIN, HIGH);  // Turn LED on
-  delay(500);                          // Wait 500ms
-  digitalWrite(STATUS_LED_PIN, LOW);   // Turn LED off
-  delay(500);                          // Wait 500ms
+  // Test all pins
+  digitalWrite(7, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  Serial.println("All LEDs ON");
+  delay(1000);
+
+  digitalWrite(7, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  Serial.println("All LEDs OFF");
+  delay(1000);
 }
