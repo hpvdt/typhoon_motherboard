@@ -42,8 +42,11 @@ static void toggle_leds(void)
 {
     /* Set all GPIO levels to the same state (all on or all off) */
     gpio_set_level(LED_GPIO_5, s_led_state);
+    vTaskDelay((BLINK_PERIOD / portTICK_PERIOD_MS) / 4);
     gpio_set_level(LED_GPIO_6, s_led_state);
+    vTaskDelay((BLINK_PERIOD / portTICK_PERIOD_MS) / 4);
     gpio_set_level(LED_GPIO_7, s_led_state);
+    vTaskDelay((BLINK_PERIOD / portTICK_PERIOD_MS) / 4);
     gpio_set_level(LED_GPIO_8, s_led_state);
 }
 
