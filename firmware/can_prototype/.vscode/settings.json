@@ -16,5 +16,6 @@
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\oneth\\Desktop\\UofT\\hpvdt\\typhoon_motherboard\\firmware\\blinky\\build"
   ],
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "idf.currentSetup": "C:\\Users\\oneth\\esp\\v5.4.1\\esp-idf"
 }

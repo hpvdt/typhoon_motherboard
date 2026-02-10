@@ -632,7 +632,7 @@
           "group_by": false,
           "label": "MP",
           "name": "MP",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,

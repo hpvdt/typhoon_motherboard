@@ -14,7 +14,7 @@
 /* -------------------------------------------------------------------------- */
 /*                               Configurations                               */
 /* -------------------------------------------------------------------------- */
-#define CAN_LOOPBACK_TEST
+// #define CAN_LOOPBACK_TEST
 
 /* -------------------------------------------------------------------------- */
 /*                              Global Variables                              */
@@ -35,8 +35,8 @@ static uint8_t s_led_state = 0;
 #define BLINK_PERIOD CONFIG_BLINK_PERIOD
 
 // CAN Pins
-#define CAN_TX_PIN GPIO_NUM_37
-#define CAN_RX_PIN GPIO_NUM_36
+#define CAN_TX_PIN GPIO_NUM_17
+#define CAN_RX_PIN GPIO_NUM_16
 
 /* --------------------------- CAN ID Definitions --------------------------- */
 #define CAN_ID_MOTHERBOARD  0x100
@@ -91,18 +91,25 @@ static void toggle_leds(void)
  * 
  */
 void can_init(void){
-    // Configure timing for 500 kbps
-    twai_timing_config_t t_config = TWAI_TIMING_CONFIG_500KBITS();
+    // Configure timing for 125 kbps (match STM32)
+    twai_timing_config_t t_config = TWAI_TIMING_CONFIG_125KBITS();
 
     // Configure filter to accept all messages
     twai_filter_config_t f_config = TWAI_FILTER_CONFIG_ACCEPT_ALL();
 
     #ifdef CAN_LOOPBACK_TEST
-    // Configure general settings - Loopback Mode
+    // Loopback Mode for self-testing
     twai_general_config_t g_config = TWAI_GENERAL_CONFIG_DEFAULT(
         CAN_TX_PIN,
         CAN_RX_PIN,
-        TWAI_MODE_NO_ACK // loopback mode for testing
+        TWAI_MODE_NO_ACK
+    );
+    #else
+    // Normal Mode for real CAN bus
+    twai_general_config_t g_config = TWAI_GENERAL_CONFIG_DEFAULT(
+        CAN_TX_PIN,
+        CAN_RX_PIN,
+        TWAI_MODE_NORMAL
     );
     #endif
 
@@ -116,7 +123,11 @@ void can_init(void){
 
     // Start TWAI driver
     ESP_ERROR_CHECK(twai_start());
+    #ifdef CAN_LOOPBACK_TEST
     ESP_LOGI(TAG, "TWAI driver started - LOOPBACK MODE");
+    #else
+    ESP_LOGI(TAG, "TWAI driver started - NORMAL MODE");
+    #endif
 }
 
 /**
@@ -184,15 +195,14 @@ void can_receive_task(void *arg){
 
 void can_heartbeat_task(void *arg){
     uint8_t counter = 0;
-    uint8_t data[2];
+    uint8_t data[8] = {0xDE, 0xAD, 0xBE, 0xEF, 0x00, 0x00, 0x00, 0x00};
 
     while(1){
-        // Prepare heartbeat message 
-        data[0] = MSG_HEARTBEAT;
-        data[1] = counter++;
+        // Update counter in data
+        data[4] = counter++;
 
-        // Send heartbeat
-        can_send_message(CAN_ID_MOTHERBOARD, data, 2);
+        // Send with ID 0x123 (so STM32 receives it)
+        can_send_message(0x123, data, 8);
 
         // Wait
         vTaskDelay(pdMS_TO_TICKS(1000));
