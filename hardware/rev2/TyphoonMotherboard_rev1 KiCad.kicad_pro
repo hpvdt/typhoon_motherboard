@@ -494,7 +494,14 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(U5-VOS)": [
+        "VOUT / 3A"
+      ],
+      "Net-(U6-VOS)": [
+        "VOUT / 3A"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
