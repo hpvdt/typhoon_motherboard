@@ -517,14 +517,7 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "Net-(U5-VOS)": [
-        "VOUT / 3A"
-      ],
-      "Net-(U6-VOS)": [
-        "VOUT / 3A"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -783,7 +776,7 @@
         "uuid": "0698428a-d4a0-427e-a71d-c3fe76731535"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U4-5,L1-2,#PWR1-3,#PWR6,#PWR8,#PWR11-12,#PWR16,C1,C3,C7-8",
     "variants": []
   },
   "sheets": [
